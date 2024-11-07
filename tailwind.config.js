@@ -5,6 +5,7 @@ export default {
       colors: {
         letter: "#6C86EF",
         blueking: "#023859",
+        bluebutton:"#011640",
       },
     },
   },

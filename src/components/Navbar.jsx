@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import logo from '../assets/LOGO.png';
 import phone from '../assets/icons8-phone-50.png';
+import whats from '../assets/icons8-whatsapp-50.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,39 +15,45 @@ const Navbar = () => {
   return (
     <div>
       {/* Tira superior */}
-      <div className="h-14  bg-blueking text-sm px-4 py-1 flex justify-start">
+      <div className="h-14 bg-blueking text-sm px-4 py-1 flex justify-start">
         <img src={phone} alt="phone" className="h-5 w-auto" />
-        <span className='!text-white'>618111111</span>
+        <span className='!text-white'>618 818 4002</span>
+        <img src={whats} alt="phone" className="h-5 w-auto" />
+        <span className='!text-white'>618 818 4002</span>
       </div>
       
       {/* Barra de navegación */}
-      <nav className=" h-28 bg-white shadow text-bg w-full">
+      <nav className="h-28 bg-white shadow text-bg w-full">
         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
 
-           {/* Logo con la imagen importada */}
-           <div className="flex items-center">
+          {/* Logo con la imagen importada */}
+          <div className="flex items-center">
             <img src={logo} alt="logo" className="h-32 w-auto mt-11" />
           </div>
           
           <div className="hidden md:flex space-x-12 mr-44 pt-9">
-            <a href="#about" className="text-letter text-xl font-bold px-3 py-2 rounded-md">INICIO</a>
-  
+            <Link to="/" className="text-letter text-xl font-bold px-3 py-2 rounded-md transition transform hover:scale-105 hover:text-blueking">INICIO</Link>
+
             <div className="relative group"> {/* Contenedor para el dropdown */}
-              <button className="text-letter text-xl font-bold px-3 py-2 rounded-md">OFERTA EDUCATIVA</button>
-    
+              <button className="text-letter text-xl font-bold px-3 py-2 rounded-md transition transform hover:scale-105 hover:text-blueking">
+                OFERTA EDUCATIVA
+              </button>
+
               {/* Dropdown Menu */}
-             <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
-                <a href="#program1" className="block px-4 py-2 text-letter hover:bg-gray-100">PREESCOLAR</a>
-                <a href="#program2" className="block px-4 py-2 text-letter hover:bg-gray-100">PRIMARIA</a>
-                <a href="#program3" className="block px-4 py-2 text-letter hover:bg-gray-100">SECUNDARIA</a>
-                <a href="#program3" className="block px-4 py-2 text-letter hover:bg-gray-100">PREPARATORIA</a>
+              <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block z-20 group-focus-within:block">
+                <div className="space-y-2 py-2">
+                  <Link to="/preescolar" className="block px-4 py-2 text-letter hover:bg-gray-100">PREESCOLAR</Link>
+                  <Link to="/primaria" href="#program2" className="block px-4 py-2 text-letter hover:bg-gray-100">PRIMARIA</Link>
+                  <Link to="/secundaria" href="#program3" className="block px-4 py-2 text-letter hover:bg-gray-100">SECUNDARIA</Link>
+                  <Link to="/preparatoria" href="#program3" className="block px-4 py-2 text-letter hover:bg-gray-100">PREPARATORIA</Link>
+                </div>
               </div>
             </div>
 
-            <a href="#home" className="text-letter text-xl font-bold px-3 py-2 rounded-md">NOSOTROS</a>
-            <a href="#contact" className="text-letter text-xl font-bold px-3 py-2 rounded-md">CONTACTO</a>
-          </div>
 
+            <Link to="/nosotros" className="text-letter text-xl font-bold px-3 py-2 rounded-md transition transform hover:scale-105 hover:text-blueking">NOSOTROS</Link>
+            <Link to="/contacto" className="text-letter text-xl font-bold px-3 py-2 rounded-md transition transform hover:scale-105 hover:text-blueking">CONTACTO</Link>
+          </div>
 
           {/* Botón de menú para pantallas pequeñas */}
           <div className="md:hidden">
@@ -56,13 +64,14 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
         {/* Menú desplegable para pantallas pequeñas */}
         {isOpen && (
           <div className="md:hidden">
-            <a href="#home" className="block px-4 py-2 hover:bg-blue-700">Home</a>
-            <a href="#about" className="block px-4 py-2 hover:bg-blue-700">About</a>
-            <a href="#services" className="block px-4 py-2 hover:bg-blue-700">Services</a>
-            <a href="#contact" className="block px-4 py-2 hover:bg-blue-700">Contact</a>
+            <a href="#Inicio" className="block px-4 py-2 hover:bg-blue-700 transition transform hover:scale-105">Inicio</a>
+            <a href="#Oferta" className="block px-4 py-2 hover:bg-blue-700 transition transform hover:scale-105">Oferta</a>
+            <a href="#Nosotros" className="block px-4 py-2 hover:bg-blue-700 transition transform hover:scale-105">Nosotros</a>
+            <a href="#Contacto" className="block px-4 py-2 hover:bg-blue-700 transition transform hover:scale-105">Contacto</a>
           </div>
         )}
       </nav>
@@ -71,3 +80,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

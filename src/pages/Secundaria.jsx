@@ -1,0 +1,85 @@
+import React from 'react';
+import backgroundImage from '../assets/wallpaper3.jpg';
+import backgroundImage2 from '../assets/wallpaper4.jpg';
+import { motion } from 'framer-motion';
+
+
+const Secundaria = () => {
+    return (
+        <>
+         <motion.header 
+            className="relative w-full h-52 flex items-center justify-center text-center text-white"
+            style={{
+                backgroundImage: `url(${backgroundImage})`, 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center', 
+            }}
+            initial={{ opacity: 0 }}  // La animación comienza con opacidad 0
+            animate={{ opacity: 1 }}  // La animación se mueve a opacidad 1
+            transition={{ duration: 1 }}  // Duración de la animación en segundos
+        >
+            {/* Overlay para oscurecer la imagen de fondo */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>
+
+            {/* Contenido del Header */}
+            <div className="relative z-10 px-6">
+                <h1 className="text-5xl md:text-6xl font-bold mb-4">Secundaria</h1>
+                <p className="text-lg md:text-xl max-w-2xl mx-auto">
+                    Explora nuestros servicios y descubre cómo podemos ayudarte.
+                </p>
+            </div>
+        </motion.header>
+
+        <motion.div
+            className="container mx-auto flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg p-6"
+            initial={{ opacity: 0, y: 50 }} // Comienza con opacidad 0 y desplazado hacia abajo
+            animate={{ opacity: 1, y: 0 }} // Termina con opacidad 1 y en su posición original
+            transition={{ duration: 1 }} // Duración de la animación
+        >
+            <div className="w-full md:w-1/2 p-4">
+                <img
+                    src={backgroundImage}
+                    alt="Secundaria"
+                    className="rounded-lg shadow-md object-cover w-full h-auto"
+                />
+            </div>
+
+            <div className="w-full md:w-1/2 p-4">
+                <h2 className="text-3xl font-bold text-red-700 mb-4">Secundaria</h2>
+                <ul className="list-disc pl-5 space-y-2 text-lg text-black">
+                    <li>Educación para adolescentes de 1º a 3º de secundaria.</li>
+                    <li>Preparación para enfrentar retos académicos y personales con un enfoque en valores y habilidades tecnológicas.</li>
+                    <li>Actividades extracurriculares y programas de desarrollo emocional.</li>
+                </ul>
+            </div>
+        </motion.div>
+
+           
+            <section class="w-full bg-white py-20 ">
+                
+                <h2 class="text-3xl font-bold text-red-700 mb-4 text-center">
+                    Documentacion general para alumnos de nuevo ingreso
+                </h2>
+
+                
+                <ul class="list-disc space-y-2 py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-20 lg:px-40">
+                    <li>Acta de nacimiento (original y copia).</li>
+                    <li>CURP (Dos copias) de alumno (a) y del padre, madre o tutor.</li>
+                    <li>Certificado de primaria (original y copia).</li>
+                    <li>Boleta oficial de calificaciones del grado anterior a cursar (original y copia).</li>
+                    <li>Carta de buena conducta.</li>
+                    <li>Foto digital.</li>
+                    <li>Ficha psicopedagógica.</li>
+                </ul>
+
+            </section>
+
+
+
+
+        </>
+
+    );
+};
+
+export default Secundaria;
