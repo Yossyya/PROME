@@ -25,7 +25,7 @@ const Preparatoria = () => {
             <div className="relative z-10 px-6">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4">Preparatoria</h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto">
-                    Explora nuestros servicios y descubre cómo podemos ayudarte.
+                Descubre nuestros servicios y cómo podemos apoyar el crecimiento académico y personal de tus hijos.
                 </p>
             </div>
         </motion.header>
@@ -47,32 +47,29 @@ const Preparatoria = () => {
             <div className="w-full md:w-1/2 p-4">
                 <h2 className="text-3xl font-bold text-red-700 mb-4">Preparatoria</h2>
                 <ul className="list-disc pl-5 space-y-2 text-lg text-black">
-                    <li>Educación para adolescentes de 1º a 3º de secundaria.</li>
-                    <li>Preparación para enfrentar retos académicos y personales con un enfoque en valores y habilidades tecnológicas.</li>
-                    <li>Actividades extracurriculares y programas de desarrollo emocional.</li>
+                    <li>Educación preparatoria con enfoque en preparar a los estudiantes para el ingreso a universidades de prestigio.</li>
+                    <li>Formación académica sólida en ciencias, humanidades y tecnología.</li>
+                    <li>Desarrollo de habilidades de liderazgo, ética y responsabilidad social.</li>
                 </ul>
             </div>
         </motion.div>
 
            
-            <section class="w-full bg-white py-20 ">
-                
-                <h2 class="text-3xl font-bold text-red-700 mb-4 text-center">
-                    Documentacion general para alumnos de nuevo ingreso
-                </h2>
+        <section class="w-full bg-white py-20">
+            <h2 class="text-3xl font-bold text-red-700 mb-4 text-center">
+                Documentación general para alumnos de nuevo ingreso
+            </h2>
 
-                
-                <ul class="list-disc space-y-2 py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-20 lg:px-40">
-                    <li>Acta de nacimiento (original y copia).</li>
-                    <li>CURP (Dos copias) de alumno (a) y del padre, madre o tutor.</li>
-                    <li>Certificado de primaria (original y copia).</li>
-                    <li>Boleta oficial de calificaciones del grado anterior a cursar (original y copia).</li>
-                    <li>Carta de buena conducta.</li>
-                    <li>Foto digital.</li>
-                    <li>Ficha psicopedagógica.</li>
-                </ul>
-
+            <ul class="list-disc list-inside py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 px-6 md:px-20 lg:px-40">
+                <li class="min-h-[60px]">Acta de nacimiento (original y copia).</li>
+                <li class="min-h-[60px]">CURP (Dos copias) de alumno (a).</li>
+                <li class="min-h-[60px]">Certificado de Secundaria (original y copia)</li>
+                <li class="min-h-[60px]">Boleta oficial de calificaciones (original y copia) de 3° de secundaria (hasta el mes que tenga registrado al día de la inscripción) o del semestre anterior a cursar (hasta 4° semestre).</li>
+                <li class="min-h-[60px]">Carta de buena conducta.</li>
+                <li class="min-h-[60px]">6 Fotografías tamaño infantil (Blanco y Negro, No Instantáneas).</li>
+            </ul>
             </section>
+
 
 
 

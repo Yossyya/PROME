@@ -25,7 +25,7 @@ const Secundaria = () => {
             <div className="relative z-10 px-6">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4">Secundaria</h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto">
-                    Explora nuestros servicios y descubre cómo podemos ayudarte.
+                Descubre nuestros servicios y cómo podemos apoyar el crecimiento académico y personal de tus hijos.
                 </p>
             </div>
         </motion.header>
@@ -62,7 +62,7 @@ const Secundaria = () => {
                 </h2>
 
                 
-                <ul class="list-disc space-y-2 py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-20 lg:px-40">
+                <ul class="list-disc list-inside py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 px-6 md:px-20 lg:px-40">
                     <li>Acta de nacimiento (original y copia).</li>
                     <li>CURP (Dos copias) de alumno (a) y del padre, madre o tutor.</li>
                     <li>Certificado de primaria (original y copia).</li>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import logo from '../assets/LOGO.png';
 import phone from '../assets/icons8-phone-50.png';
 import whats from '../assets/icons8-whatsapp-50.png';
+import eng from '../assets/icons8-config-50.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -15,12 +16,26 @@ const Navbar = () => {
   return (
     <div>
       {/* Tira superior */}
-      <div className="h-14 bg-blueking text-sm px-4 py-1 flex justify-start">
-        <img src={phone} alt="phone" className="h-5 w-auto" />
-        <span className='!text-white'>618 818 4002</span>
-        <img src={whats} alt="phone" className="h-5 w-auto" />
-        <span className='!text-white'>618 818 4002</span>
+      <div className="h-14 bg-blueking text-sm px-4 py-1 flex justify-between items-center space-x-2">
+        <div className='text-sm flex items-center space-x-2'>
+          <img src={phone} alt="phone" className="h-4 w-auto" />
+          <span className="!text-white">618 818 4002</span>
+          <img src={whats} alt="whats" className="h-4 w-auto" />
+          <span className="!text-white">618 818 4002</span>
+        </div>
+
+        {/* Imagen eng al extremo derecho */}
+        <img src={eng} alt="engine" className="h-5 w-auto" />
       </div>
+
+
+
+
+     
+
+      
+         
+      
       
       {/* Barra de navegación */}
       <nav className="h-28 bg-white shadow text-bg w-full">

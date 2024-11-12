@@ -23,9 +23,16 @@ const Nosotros = () => {
             >
                 <h1 className="text-4xl font-semibold text-black text-center py-12">NUESTRA HISTORIA</h1>
                 <p className='py-12 px-10 text-black w-full text-2xl font-semibold text-center '>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, arcu eget viverra efficitur, orci ipsum tincidunt tortor, at convallis orci felis at libero.
-                    Sed scelerisque vel odio ac tristique. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, arcu eget viverra efficitur, orci ipsum tincidunt tortor, at convallis orci felis at libero. Sed scelerisque vel odio ac tristique.
+                El Colegio Promedac es una institución educativa privada con más de 50 años de experiencia, nos hemos consolidado como una
+                 institución de prestigio en el norte-centro ubicada en Durango, México. 
+              
+                   
+                </p>
+
+                <p className='py-12 px-10 text-black w-full text-2xl font-semibold text-center '>
+                Nos especializamos en brindar una educación personalizada, enfocándonos en el desarrollo integral del estudiante a través 
+                de un enfoque académico riguroso y un ambiente de valores como la ética, la responsabilidad y el compromiso social. 
+                    
                 </p>
                 <div className="p-4">
                     <h2 className="text-2xl font-bold mb-4 text-center">Mira nuestro video</h2>

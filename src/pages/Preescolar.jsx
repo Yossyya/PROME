@@ -25,7 +25,7 @@ const Preescolar = () => {
             <div className="relative z-10 px-6">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4">Preescolar</h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto">
-                    Explora nuestros servicios y descubre cómo podemos ayudarte.
+                Descubre nuestros servicios y cómo podemos apoyar el crecimiento académico y personal de tus hijos.
                 </p>
             </div>
         </motion.header>
@@ -47,9 +47,9 @@ const Preescolar = () => {
             <div className="w-full md:w-1/2 p-4">
                 <h2 className="text-3xl font-bold text-red-700 mb-4">Preescolar</h2>
                 <ul className="list-disc pl-5 space-y-2 text-lg text-black">
-                    <li>Educación para adolescentes de 1º a 3º de secundaria.</li>
-                    <li>Preparación para enfrentar retos académicos y personales con un enfoque en valores y habilidades tecnológicas.</li>
-                    <li>Actividades extracurriculares y programas de desarrollo emocional.</li>
+                    <li>Educación integral para niños de 3 a 6 años.</li>
+                    <li>Desarrollo de habilidades motrices, cognitivas y emocionales.</li>
+                    <li>Enfoque en la creatividad, la comunicación y los primeros pasos en la lectoescritura y matemáticas.</li>
                 </ul>
             </div>
         </motion.div>
@@ -62,14 +62,20 @@ const Preescolar = () => {
                 </h2>
 
                 
-                <ul class="list-disc space-y-2 py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-20 lg:px-40">
+                <ul class="list-disc list-inside py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 px-6 md:px-20 lg:px-40">
                     <li>Acta de nacimiento (original y copia).</li>
-                    <li>CURP (Dos copias) de alumno (a) y del padre, madre o tutor.</li>
-                    <li>Certificado de primaria (original y copia).</li>
-                    <li>Boleta oficial de calificaciones del grado anterior a cursar (original y copia).</li>
-                    <li>Carta de buena conducta.</li>
-                    <li>Foto digital.</li>
-                    <li>Ficha psicopedagógica.</li>
+
+                    <li>Para 1° de Preescolar: 3 años cumplidos al 31 de diciembre.</li>
+
+                    <li>CURP (Dos copias) de alumno (a) y del padre, madre o tutor</li>
+
+                    <li>Para 2° de Preescolar: 4 años cumplidos al 31 de diciembre.</li>
+
+                    <li>Copia de Cartilla de Vacunación</li>
+
+                    <li>Para 3° de Preescolar: 5 años cumplidos al 31 de diciembre.</li>
+
+                
                 </ul>
 
             </section>
