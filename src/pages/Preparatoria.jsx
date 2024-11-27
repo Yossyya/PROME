@@ -55,18 +55,18 @@ const Preparatoria = () => {
         </motion.div>
 
            
-        <section class="w-full bg-white py-20">
-            <h2 class="text-3xl font-bold text-red-700 mb-4 text-center">
+        <section className="w-full bg-white py-20">
+            <h2 className="text-3xl font-bold text-red-700 mb-4 text-center">
                 Documentación general para alumnos de nuevo ingreso
             </h2>
 
-            <ul class="list-disc list-inside py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 px-6 md:px-20 lg:px-40">
-                <li class="min-h-[60px]">Acta de nacimiento (original y copia).</li>
-                <li class="min-h-[60px]">CURP (Dos copias) de alumno (a).</li>
-                <li class="min-h-[60px]">Certificado de Secundaria (original y copia)</li>
-                <li class="min-h-[60px]">Boleta oficial de calificaciones (original y copia) de 3° de secundaria (hasta el mes que tenga registrado al día de la inscripción) o del semestre anterior a cursar (hasta 4° semestre).</li>
-                <li class="min-h-[60px]">Carta de buena conducta.</li>
-                <li class="min-h-[60px]">6 Fotografías tamaño infantil (Blanco y Negro, No Instantáneas).</li>
+            <ul className="list-disc list-inside py-10 text-black text-lg grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 px-6 md:px-20 lg:px-40">
+                <li className="min-h-[60px]">Acta de nacimiento (original y copia).</li>
+                <li className="min-h-[60px]">CURP (Dos copias) de alumno (a).</li>
+                <li className="min-h-[60px]">Certificado de Secundaria (original y copia)</li>
+                <li className="min-h-[60px]">Boleta oficial de calificaciones (original y copia) de 3° de secundaria (hasta el mes que tenga registrado al día de la inscripción) o del semestre anterior a cursar (hasta 4° semestre).</li>
+                <li className="min-h-[60px]">Carta de buena conducta.</li>
+                <li className="min-h-[60px]">6 Fotografías tamaño infantil (Blanco y Negro, No Instantáneas).</li>
             </ul>
             </section>
 
